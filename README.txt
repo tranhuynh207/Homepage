@@ -1,4 +1,4 @@
-This respiratory is to host my portfolio website "https://tranhuynh207.github.io/Homepage/"
+This respiratory is to host my portfolio website "https://tranhuynh207.ga"
 
 Credits: 
 
