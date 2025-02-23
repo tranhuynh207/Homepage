@@ -3,164 +3,392 @@
 	
 -->
 <html>
-	<head>
-		<title>Tran Huynh - Data Analytics </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4MDDR02W9"></script>
+<head>
+	<title>Tran Huynh - Data Analytics </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.rad-fade-in {
+			will-change: opacity, transform;
+			animation-name: rad-fade-in-fallback;
+			animation-duration: 5s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in-fallback {
+			0% {
+				opacity: 0;
+			}
+
+			75% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		.fonts-loaded .rad-fade-in.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+		}
+
+		.fonts-loaded .rad-fade-in.rad-animate {
+			animation-name: rad-fade-in;
+			animation-duration: 1.1s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+
+		.rad-fade-in-long {
+			will-change: opacity, transform;
+			animation-name: rad-fade-in-long-fallback;
+			animation-duration: 8s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in-long-fallback {
+			0% {
+				opacity: 0;
+			}
+
+			75% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		.fonts-loaded .rad-fade-in-long.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+		}
+
+		.fonts-loaded .rad-fade-in-long.rad-animate {
+			animation-name: rad-fade-in-long;
+			animation-duration: 2s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in-long {
+			0% {
+				opacity: 0;
+			}
+
+			20% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+
+		.rad-fade-down {
+			will-change: opacity, transform;
+			animation-name: rad-fade-down-fallback;
+			animation-duration: 5s;
+			animation-fill-mode: both;
+			transform: translateY(-30px);
+		}
+
+		@keyframes rad-fade-down-fallback {
+			0% {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+
+			75% {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.fonts-loaded .rad-fade-down.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+			transform: translateY(-30px);
+		}
+
+		.fonts-loaded .rad-fade-down.rad-animate {
+			animation-name: rad-fade-down;
+			animation-duration: 1.1s;
+		}
+
+		@keyframes rad-fade-down {
+			0% {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+
+		.rad-scale-down {
+			will-change: opacity, transform;
+			animation-name: rad-scale-down-fallback;
+			animation-duration: 5s;
+			animation-fill-mode: both;
+			transform-origin: 50% 0;
+		}
+
+		@keyframes rad-scale-down-fallback {
+			0% {
+				opacity: 0;
+				transform: scaleY(0.95);
+			}
+
+			75% {
+				opacity: 0;
+				transform: scaleY(0.95);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scaleY(1);
+			}
+		}
+
+		.fonts-loaded .rad-scale-down.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+			transform: scaleY(0.95);
+		}
+
+		.fonts-loaded .rad-scale-down.rad-animate {
+			animation-name: rad-scale-down;
+			animation-duration: 1.1s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-scale-down {
+			0% {
+				opacity: 0;
+				transform: scaleY(0.95);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scaleY(1);
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="https://mattdancho.netlify.app/css/main.css" />
+
+	<link rel="stylesheet" href="https://mattdancho.netlify.app/css/rad-icons.css" />
+
+	<link rel="stylesheet" href="https://mattdancho.netlify.app/css/custom.css" />
+	<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-E4MDDR02W9');
+		gtag('config', '');
 	</script>
-		
-	<body class="is-preload">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<body class="is-preload">
 
-					<!-- Intro -->
-					<div id="intro">
-						<h1> TRAN HUYNH </h1>
-						<p> BI Specialist
-						 </p>	
-						<ul class="actions">
-							<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
 
-					<!-- Header -->
-					
+		<!-- Intro -->
+		<div id="intro">
+			<h1> TRAN HUYNH </h1>
+			<p style="color: white"> BI Specialist
+			</p>
+			<ul class="actions">
+				<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
 
-							
-					<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Homepage</a></li>
-							<li><a href="about.html">About me</a></li>
-							<li ><a href="blog.html">Personal Blog</a></li>
-							
-						</ul> 
-
-						<ul class="icons">
-							
-							<li><a href="https://github.com/tranhuynh207" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-				
+		<!-- Header -->
 
 
-					<!-- Main -->
-					<div id="main">
-						
-						<!-- About me -->
-							<section class="post">
-							<header id="aboutme">
-							<!-- <h2>About </h2> -->
-							<!-- <span class="image right"><img src="images/portrait.jpeg" alt="" href="https://www.linkedin.com/in/tranhuynh207/" /></span> -->
-							
-							Hi, my name is Trân and I work as a <b> Business Intelligence specialist. </b>.
-					
-							<!-- I have a Master's degree in Economics and Development (Ghent Univeristy).
-							I have experience working with questionnaire design, data collection, preparation, exploration, analysis, and visualization. See more... -->
-							
-							To give you a glimpse of my abilities, this page showcases some of my projects using SQL, Python, and PowerBI.
-							</p> Do you want to work together? Please reach out to me via email.  
-								
-							</p>	  
-								
-								<ul class="actions">
-										<!-- <li><a href="about.html" class="button scrolly">About me</a></li> -->
-										<li><a href="#contact" class="button primary scrolly">Contact</a></li>
-								</ul>
-							</header>
-							
-						</section> 
-						<!-- PBI Projects -->
-							
-						<section>
-							<h2><a href="https://public.tableau.com/app/profile/tran.huynh">BI Dashboard </a></h2>
-							<!--<p> Visit <a href="https://public.tableau.com/app/profile/tran.huynh" target="_blank"> @Tran HUYNH </a> on Tableau Public.-->
-							<div class="row gtr-50 gtr-uniform">
-								<div class="col-4"><span class="image fit"><img src="images/Netflix.jpeg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/finance.jpeg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/Sale1.jpeg" alt="" /></span></div>
-								<!-- Break -->
-								<div class="col-4"><span class="image fit"><img src="images/Wal.jpeg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/HR.jpeg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/Sale2.jpeg" alt="" /></span></div>	
-							</div>
-						</section>
 
-						<!-- Coding Projects -->
-						<section>
-							<header>
-								<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/SQL/Black_Friday_Sale/Black_Friday_Sale.sql" target="_blank">Using SQL to explore Sales data on Black Friday </h3>
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Homepage</a></li>
+				<li><a href="about.html">About me</a></li>
+				<li><a href="blog.html">Personal Blog</a></li>
 
-							</header>
-							<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/SQL/Black_Friday_Sale/Black_Friday_Sale.sql" target="_blank" class="image right"><img src="images/black friday.jpeg" alt="" /></a>
+			</ul>
 
-							<p> Sales insights were explored by using different SQL expressions. For example: </p>
-							<ol>
-								<li>Number of purchases from each city</li>
-								<li>Details of Top 10 male customers having large purchases</li>
-								<li>The most purchased product of every city</li>
-								<li>...</li>
-							</ol>
-							<i>Keywords: Windows functions, Aggregate function, CTE's, Joins</i>
+			<ul class="icons">
+
+				<li><a href="https://github.com/tranhuynh207" class="icon brands alt fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- About me -->
+			<section id="aboutme" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"
+				style="min-height: 60vh">
+
+				<div class="container">
+					<div class="row" style="display: flex; justify-content: space-between;">
+						<div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-8">
+							<h1 class="display-1">
+								Hi, my name is Trân.
+								<br />
+								<span class="lead" style="font-size: 24px">I work as a <b>Business Intelligence
+										specialist</b></span>
+							</h1>
+							<p class="lead">
+								To give you a glimpse of my abilities, this page showcases some of my projects using
+								SQL, Python,
+								and PowerBI.
 							</p>
-							<ul class="actions ">
-								<li><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/SQL/Black_Friday_Sale/Black_Friday_Sale.sql" target="_blank" class="button"> CODE </a></li>
-							</ul>
-						</section>
-							<section>
-								<header>
-									<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Cluster%20Analysis/Retail%20Store%20Customer%20segmentation.ipynb" target="_blank" > Market Segmentation (Python) </h3>
-								</header>
-								<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Cluster%20Analysis/Retail%20Store%20Customer%20segmentation.ipynb" target="_blank" class="image right"><img src="images/Cluster.jpeg" alt="" /></a>
-								<p> This project uses dataset from a retail store to identify customer groups for marketing strategy planning. 
-									Below are the specific objectives: </p>
-								<ol>
-									<li>Identify and visualize customer profiles in general, and by gender</li>
-									<li>Use k-mean cluster analysis to divide customers groups and depict profiles based on demographic information</li>
-									<li>Suggest business/marketing strategies</li>
-								</ol>
-								</br>
-								</br><i>Keywords: Pandas, Seaborn, Matplotlib, KMean, Machine Learning</i>
-								</p>
-								<ul class="actions">
-									<li><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Cluster%20Analysis/Retail%20Store%20Customer%20segmentation.ipynb" target="_blank" class="button">CODE </a></li>
-								</ul>
-								</br>
-							</section>
-	
-							<section>
-								<header>
-									<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Movies%20Project%20.ipynb" target="_blank" >Exploratory Data Analysis (EDA) </h3>
-								</header>
-								<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Movies%20Project%20.ipynb" target="_blank" class="image right"><img src="images/movie1.png" alt="" /></a>
-								</br>Is the movie industry dying? Is Netflix the new entertainment king? 
-								</br>This project used <b>Python</b> to assess movie revenue over the last decade.
-								Results show that <b>the number of votes</b> and <b>movie budget</b> have correlations with <b>gross revenue</b>.
-								</br>
-								</br><i>Keywords: Pandas, NumPy, Seaborn, Matplotlib</i>
-								</p>
-								<ul class="actions">
-									<li><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Movies%20Project%20.ipynb" target="_blank" class="button">CODE </a></li>
-								</ul>
-								</br>
-							</section>
+							</p> Do you want to work together? Please reach out to me via email.
+							</p>
+							<a href="#contact" class="button primary scrolly">Contact</a>
+						</div>
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<img class="lozad img-responsive" src="https://avatars.githubusercontent.com/u/94794374?v=4"
+								alt="" style="width: 310px; height: auto;" />
+						</div>
+					</div>
+				</div>
+			</section>
 
-					
+			<!-- PBI Projects -->
 
-							<!-- <section>
+			<section class="section rad-animation-group pb-20 pt-20 section--border-bottom">
+				<div class="container rad-fade-down">
+					<header>
+						<h2><a href="https://public.tableau.com/app/profile/tran.huynh">BI Dashboard </a></h2>
+					</header>
+
+					<!--<p> Visit <a href="https://public.tableau.com/app/profile/tran.huynh" target="_blank"> @Tran HUYNH </a> on Tableau Public.-->
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/Netflix.jpeg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/finance.jpeg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Sale1.jpeg" alt="" /></span></div>
+						<!-- Break -->
+						<div class="col-4"><span class="image fit"><img src="images/Wal.jpeg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/HR.jpeg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Sale2.jpeg" alt="" /></span></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Coding Projects -->
+			<section class="section rad-animation-group pb-20 pt-20 section--border-bottom">
+				<div class="container rad-fade-down">
+					<header>
+						<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/SQL/Black_Friday_Sale/Black_Friday_Sale.sql"
+								target="_blank">Using SQL to explore Sales data on Black Friday </h3>
+					</header>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/SQL/Black_Friday_Sale/Black_Friday_Sale.sql"
+						target="_blank" class="image right"><img src="images/black friday.jpeg" alt="" /></a>
+
+					<p> Sales insights were explored by using different SQL expressions. For example: </p>
+					<ol>
+						<li>Number of purchases from each city</li>
+						<li>Details of Top 10 male customers having large purchases</li>
+						<li>The most purchased product of every city</li>
+						<li>...</li>
+					</ol>
+					<i>Keywords: Windows functions, Aggregate function, CTE's, Joins</i>
+					</p>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/SQL/Black_Friday_Sale/Black_Friday_Sale.sql"
+						target="_blank" class="button"> CODE </a>
+				</div>
+			</section>
+
+			<section class="section rad-animation-group pb-20 pt-20 section--border-bottom">
+				<div class="container rad-fade-down">
+					<header>
+						<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Cluster%20Analysis/Retail%20Store%20Customer%20segmentation.ipynb"
+								target="_blank"> Market Segmentation (Python) </h3>
+					</header>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Cluster%20Analysis/Retail%20Store%20Customer%20segmentation.ipynb"
+						target="_blank" class="image right"><img src="images/Cluster.jpeg" alt="" /></a>
+					<p> This project uses dataset from a retail store to identify customer groups for marketing strategy
+						planning.
+						Below are the specific objectives: </p>
+					<ol>
+						<li>Identify and visualize customer profiles in general, and by gender</li>
+						<li>Use k-mean cluster analysis to divide customers groups and depict profiles based on
+							demographic
+							information</li>
+						<li>Suggest business/marketing strategies</li>
+					</ol>
+					</br>
+					</br><i>Keywords: Pandas, Seaborn, Matplotlib, KMean, Machine Learning</i>
+					</p>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Cluster%20Analysis/Retail%20Store%20Customer%20segmentation.ipynb"
+						target="_blank" class="button">CODE </a>
+					</br>
+				</div>
+			</section>
+
+			<section class="section rad-animation-group pb-20 pt-20 section--border-bottom">
+				<div class="container rad-fade-down">
+					<header>
+						<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Movies%20Project%20.ipynb"
+								target="_blank">Exploratory Data Analysis (EDA) </h3>
+					</header>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Movies%20Project%20.ipynb"
+						target="_blank" class="image right"><img src="images/movie1.png" alt="" /></a>
+					</br>
+					<p>Is the movie industry dying? Is Netflix the new entertainment king?</p>
+					</br>
+					<p>This project used <b>Python</b> to assess movie revenue over the last decade.
+						Results show that <b>the number of votes</b> and <b>movie budget</b> have correlations with
+						<b>gross
+							revenue</b>.
+					</p>
+					</br>
+					</br><i>Keywords: Pandas, NumPy, Seaborn, Matplotlib</i>
+					</p>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Movies%20Project%20.ipynb"
+						target="_blank" class="button">CODE </a>
+					</br>
+				</div>
+			</section>
+
+
+			<!-- <section>
 								<header>
 									<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Covid19%20mySQL.sql" target="_blank">MySQL Query to explore data </h3>
 								</header>
@@ -178,7 +406,7 @@
 									<li><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Covid19%20mySQL.sql" target="_blank" class="button"> CODE </a></li>
 								</ul>
 							</section> -->
-								<!--	
+			<!--	
 								<section>
 									<header>
 
@@ -200,32 +428,42 @@
 									</ul>
 								</section>
 								-->
-							<section>
-									<header>
-										<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb" target="_blank"> API Project with Python (coming soon)
-										</h3>
-									<!-- </header>
+			<section class="section rad-animation-group pb-20 pt-20 section--border-bottom">
+				<div class="container rad-fade-down">
+					<header>
+						<h3> API Project with Python (coming soon)
+						</h3>
+						<!-- </header>
 									<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb" target="_blank" class="image right"><img src="images/api.jpeg" alt="" /></a>
 									 <p> Data scraping isn't something only for <i>programmer</i> or <i>software engineer</i>; we, analysts, can do it too using BeautifulSoup and Requests libraries. 
 									</br> This project is a case study scraping data of an interesting book from Amazon. </p>
 									<ul class="actions ">
 										<li><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb" target="_blank" class="button">CODE</a></li>
 									</ul> -->
-							</section>	
-							<section>
-								<header>
-									<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb" target="_blank"> Amazon Web Scraping using Python
-									</h3>
-								</header>
-								<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb" target="_blank" class="image right"><img src="images/amazon.jpeg" alt="" /></a>
-								<p> Data scraping isn't something only for <i>programmer</i> or <i>software engineer</i>; we, analysts, can do it too using BeautifulSoup and Requests libraries. 
-								</br> This project is a case study scraping data of an interesting book from Amazon. </p>
-								<ul class="actions ">
-									<li><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb" target="_blank" class="button">CODE</a></li>
-								</ul>
-							</section>
 
-							<!-- <section>
+				</div>
+			</section>
+			<section class="section rad-animation-group pb-20 pt-20 section--border-bottom">
+				<div class="container rad-fade-down">
+					<header>
+						<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb"
+								target="_blank"> Amazon Web Scraping using Python
+						</h3>
+					</header>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb"
+						target="_blank" class="image right"><img src="images/amazon.jpeg" alt="" /></a>
+					<br>
+					<p> Data scraping isn't something only for <i>programmer</i> or <i>software engineer</i>; we,
+						analysts,
+						can do it too using BeautifulSoup and Requests libraries.
+						</br> This project is a case study scraping data of an interesting book from Amazon. </p>
+					<br>
+					<a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/Amazon%20Web%20Scraping%20.ipynb"
+						target="_blank" class="button">CODE</a>
+				</div>
+			</section>
+
+			<!-- <section>
 								<header>
 									<h3><a href="https://github.com/tranhuynh207/Portfolio-Project/blob/main/LinearRegression_Migration.r" target="_blank"> Linear Regression Analysis using R <br />
 									</a></h3>
@@ -238,10 +476,10 @@
 								</ul>
 								</br>
 							</section> -->
-							
 
-						<!-- Testimonial -->
-							<!-- <section class="post">
+
+			<!-- Testimonial -->
+			<!-- <section class="post">
 								<header id="testimonial">
 									<h2>Testimonials</h2>
 								</header>	
@@ -258,8 +496,8 @@
 								</blockquote>
 					
 							</section>  -->
-						
-						<!-- Footer 
+
+			<!-- Footer 
 							<footer>
 								<div class="pagination">
 									<a href="#" class="previous">Prev</a>
@@ -273,9 +511,9 @@
 									<a href="#" class="next">Next</a>
 								</div>
 							</footer> -->
-		
 
-						<!-- Footer 
+
+			<!-- Footer 
 					<footer id="footer">
 						<section>
 							<form method="post" action="#">
@@ -320,51 +558,62 @@
 						</section>
 					</footer>-->
 
-					<!-- Contact -->
+			<!-- Contact -->
+
+			<section id="contact" class="section section--contact pt-0">
+				<div class="container">
+					<div class="contact">
+						<h2>Contact Tran</h2>
+						<div class="row pt-2">
 
 
-						<div id="contact" class="row">
-							<div class="col-6 col-12-small">
-								<h4>Location</h4>
-								<p> The Netherlands </p>
-								<h4>Social</h4>
-									<ul class="icons alt">
-										<li><a href="https://github.com/tranhuynh207" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-							</div>
 
-							<div class="col-6 col-12-small">
+							<img class="lozad img-responsive image-left-overflow"
+								src="https://avatars.githubusercontent.com/u/94794374?v=4" alt="Profile Picture" />
 
+							<div class="col-12 col-lg-5 contact__info">
+								<h4>Phone Number</h4>
+								<span>--</span>
 								<h4>Email</h4>
-								<p><a href="mailto:tranhuynh207@outlook.com">tranhuynh207@outlook.com</a></p>
-
-								<br>
-								<ul class="actions">
-									<li><a href="#aboutme" class="button icon solid  fa-arrow-up scrolly">back to top</a>  </li>
-								</ul>
+								<span><a href="mailto:tranhuynh207@outlook.com">tranhuynh207@outlook.com</a></span>
+								<h4>Address</h4>
+								<span> Utrecht Area, Netherlands </span>
+								<br /><br />
+								<a class="btn btn-primary" href='mailto:tranhuynh207@outlook.com'>
+									Send Message
+								</a>
+								<br /><br />
+								<a href="#aboutme" class="button icon solid fa-arrow-up scrolly">back to top</a>
 							</div>
-						</div>	
-					</div> 
-
-				<!-- Copyright -->
-				<div id="copyright">
-						<ul><li>&copy; 2022</li><li> <a href="#">Tran Huynh</a></li></ul>
+						</div>
+					</div>
 				</div>
-			</div>
-			
-			
-				
+			</section>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; 2022</li>
+				<li> <a href="#">Tran Huynh</a></li>
+			</ul>
+		</div>
+	</div>
 
 
-	</body>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+
+</body>
+
 </html>
